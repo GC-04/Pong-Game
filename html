@@ -1,0 +1,46 @@
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8"/>
+
+        <title>Pong</title>
+
+    </head>
+    <body>
+        <p>
+            Hello Pong
+        </p>
+        <!-- Create a Canvas Element -->
+        <canvas width="800" height="400" style="background:beige;"></canvas>
+    </body>
+    <script>
+        //  get the canvas as a javascript object
+        let canvas = document.querySelector("canvas");
+        //  get a 2d rendering context for drawing to the canvas.
+        let context = canvas.getContext("2d");
+        //  draw something on the canvas.
+
+        //  SEE https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API
+        context.fillStyle = "green";
+        context.fillRect(30, 30, 60, 60);
+
+        //  TODO:   change color, size and location of rectangle.
+        //  TODO:   draw more rectangles.
+        context.fillStyle = "blue";
+        context.fillRect(10, 10, 40, 40);
+
+        context.fillStyle =  "orange";
+        context.fillRect(30, 30, 60, 60);
+        //  TODO:   look up Canvas API and draw other types of shapes.
+        //  TODO:   draw a more complex shape like a mickey mouse head with ears.
+        //  TODO:   draw several of those complex shapes.
+        //  TODO:   write and use a function to reuse the complex drawing code.
+    </script>
+
+    <script>
+       
+    </script>
+
+    <canvas id="tutorial"> </canvas>
+
+
+</html>
